@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/*
+Original design: andreas08 (v2.0 - Jul 07, 2008) - A free xhtml/css website template by Andreas Viklund.
+For more information, see http://andreasviklund.com/templates/andreas08/
+*/
+
+/* Body and tag styles */
+* {margin:0; padding:0;}
+body {font:0.8em Helvetica,Ariel,sans-serif; line-height:1.4em; text-align:left; color:#222; background:#333333;}
+a {color: #36C; font-weight: bold; text-decoration: none; }
+p a, table a, ul a { font-weight: normal; text-decoration: underline; }
+a:hover {color: #39F; text-decoration: none;}
+a img {border:none;}
+p {padding:.8em 0;}
+p form {margin-top:0; margin-bottom:20px;}
+img.left,img.center,img.right { padding:4px; border:1px solid #999; }
+img.left {float:left; margin:0 12px 5px 0;}
+img.center {display:block; margin:0 auto 5px auto;}
+img.right {float:right; margin:0 0 5px 12px;}
+
+/* Header and navigation styles */
+#container {width: 100%; text-align:left; background:#FFF; color:#333; padding: 0; }
+
+#header-container { width: 100%; background:#36C; text-align:center; padding: 10px 0; }
+
+#header { width: 1000px; margin: 0 auto; text-align: left; }
+#header h1 { padding: 0px 25px; margin: 0 0 5px; font-size: 55px; line-height: 55px; color:#000000; letter-spacing:-2px; font-weight:normal;}
+#header h1 { color: #FFF; font-family: "Gilles Gothic Bold"; font-weight: normal; }
+#header h2 { margin: 0 0 0 120px; padding: 0px 15px; font-size:25px; color:#EEE; font-family: "Enter Sansman"; font-weight:normal; }
+
+#logo { height: 77px; float: left; margin-right: 10px; }
+
+#navigation { line-height:27px; color:#ffffff; width: 100%; overflow: hidden; }
+#navigation ul { display: block; width: 1000px; margin: 0 auto; }
+#navigation li { float:left; list-style-type:none; white-space:nowrap; position: relative; height: 100%; }
+#navigation li + li { border-left:1px solid #ffffff; }
+#navigation li a, #navigation li span {display:block; padding:0 10px; font-size:0.95em; font-weight:normal; text-transform:uppercase; text-decoration:none; color: #ffffff;}
+* html #navigation a {width:1%;}
+#navigation li.selected a {background:#FFF; color:#000; }
+#navigation li.selected.menuparent a {background:#DDD; }
+#navigation li a:hover { text-decoration: none; background: #EEE; color: #000; }
+
+#subnav { height: 32px; line-height: 27px; width: 100%; background-color: #DDD; }
+#subnav ul { width: 1000px; margin: 0 auto; }
+#subnav li { float:left; list-style-type:none; white-space:nowrap; position: relative; height: 27px; padding: 0 10px; margin: 5px 0 0 0; }
+#subnav li + li { border-left: 1px solid #FFF; }
+#subnav a { text-decoration: none; color: #000; }
+#subnav li.selected { background-color: #FFF; }
+
+/* Content styles */
+#content { margin: 0 auto; width: 1000px; padding:20px 0; }
+#content h2, #content h1 { display:block; margin:0 0 16px 0; font-size:1.7em; font-weight:normal; letter-spacing:-1px; color:#333; }
+#content h2 a {font-weight:normal;}
+#content h3 {margin:0 0 5px 0; font-size:1.4em; letter-spacing:-1px;}
+#content a:hover,#subcontent a:hover {text-decoration:underline;}
+#content ul,#content ol {margin:8px 5px 8px 35px;}
+#content dl {margin:5px;}
+#content dt {font-weight:bold; margin-bottom:5px;}
+#content dd {margin:5px 0 5px 15px;}
+
+/* Footer styles */
+#footer { clear:both; width:100%; padding:5px 0; margin:0 auto; font-size:0.9em; color:#EEE; border-bottom: 1px solid #666; }
+#footer #footer-content { padding:0; margin:0; text-align:center;}
+#footer a { color:#EEE; font-weight:bold; }
+#footer #footer-content a { text-decoration: none; }
+#footer a:hover { color:#FFF; text-decoration: underline; }
+
+
+
+#footer div#google_translate_element { display: block; width: 100%; clear: both; background: transparent; height: 21px; margin: 3px 0; }
+#footer div#google_translate_element .goog-te-gadget-simple { background: transparent; border: none; font-size: 11px; }
+#footer div#google_translate_element .goog-te-gadget-simple img.goog-te-gadget-icon { display: none; }
+
+/* Gradients */
+#navigation {
+	background: #3366cc; /* Old browsers */
+	background: -moz-linear-gradient(top, #3366cc 0%, #3399ff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3366cc), color-stop(100%,#3399ff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #3366cc 0%,#3399ff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #3366cc 0%,#3399ff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #3366cc 0%,#3399ff 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #3366cc 0%,#3399ff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3366cc', endColorstr='#3399ff',GradientType=0 ); /* IE6-9 */
+}
+#footer {
+	background: #666; /* Old browsers */
+	background: -moz-linear-gradient(top, #666666 0%, #333333 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#666666), color-stop(100%,#333333)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #666666 0%,#333333 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #666666 0%,#333333 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #666666 0%,#333333 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #666666 0%,#333333 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+}
+
+/* Misc classes and styles */
+.splitcontentleft {float:left; width:48%;}
+.splitcontentright {float:right; width:48%;}
+.clear {clear:both;}
+.small {font-size:0.8em;}
+.hide {display:none;}
+.textcenter {text-align:center;}
+.textright {text-align:right;}
+.important {color:#f02025; font-weight:bold;}
+.box {margin:0 0 20px 0; padding:10px; border:1px solid #CCC; background-color:#fafbfc; color:#505050; line-height:1.5em;}
+.semantic { position: fixed; top: -100px; /* need to hide this... */ }
+
+/* Competitor, Events Tables CSS */
+table.competitors { border-top: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #bbb; border-bottom: 1px solid #bbb; width: 100%; }
+table.competitors td, table.competitors th { border-right: 1px solid #000; border-bottom: 1px solid #000; padding: 2px; }
+table.competitors th, table.competitors tr.striped { background: #F2F2F2; }
+table.competitors th { text-align: center; }
+table.competitors tr td { text-align: center; }
+table.competitors tr td.left-align { text-align: left; }
+table.competitors th a { font-weight: bold; text-decoration: none; }
+table.competitors th.sortcolumn, table.competitors td.sortcolumn { border-left: 1px solid #000; border-right: 2px solid #000; background-color: #FFE; }
+table.competitors th.asccolumn, table.competitors td.asccolumn { border-left: 1px solid #000; border-right: 2px solid #000; background-color: #FFE; }
+div#competitortable{ overflow: auto; }
+table.competitors tr td.unpaid, table.competitors tr.striped td.unpaid { background-color: #FFE0E0; }
+table.competitors tr td.paid, table.competitors tr.striped td.paid, table.competitors tr th.paid { background-color: #E0FFE0; }
+table.competitors tr td.waived, table.competitors tr.striped td.waived { background-color: #E0FFE0; }
+table.competitors tr td.owed, table.competitors tr.striped td.owed { background-color: #FFFFA0; }
+table.competitors tr td.col-name { text-align: left; }
+table.competitors tr td.col-country { text-align: left; }
+table.competitors tr.striped:hover td, table.competitors tr:hover td { background-color: #DDD; }
+
+th.sortcolumn:after, th.sortdefault:after, a.sortcolumn:after, a.sortdefault:after { content: '\25BC'; }
+th.asccolumn:after, a.asccolumn:after { content: '\25B2'; }
+
+table.events { border-top: 1px solid #000; border-left: 1px solid #000; border-right: 1px solid #bbb; border-bottom: 1px solid #bbb; font-size: 12px; }
+table.events td, table.events th { border-right: 1px solid #000; border-bottom: 1px solid #000; padding: 2px; text-align: center; }
+table.events th, table.events tr.striped { background: #e8eaec; }
+
+/* make fieldsets, errors, and buttons look a bit nicer for forms. */
+fieldset { border: 1px solid #CCC; padding: 10px; margin: 10px; background-color: #EEE; }
+fieldset legend { border: 1px solid #CCC; padding: 3px; font-style: italic; background-color: #FFF; }
+input[type="text"].error { border: 1px solid #F00; background-color: #FFF5F5; }
+textarea.error { border: 1px solid #F00; }
+.padded { padding: 5px; }
+span.warning { color: #C00; display: block; width: 90%; margin: 2px auto; text-align: center; border: 1px solid #C00; background-color: #FEE; }
+span.success { color: #0C0; display: block; width: 90%; margin: 2px auto; text-align: center; border: 1px solid #0C0; background-color: #EFE; }
+fieldset table tr td { vertical-align: middle; }
+input[type="button"], input[type="submit"], input[type="reset"] { padding: 1px 4px; }
+img.sample-img { border: 1px solid #000; background-color: #FFF; max-width: 708px; max-height: 86px; }
+
+/* some more contact stuff... */
+div#posted-message { margin: 10px; border: 1px solid #CCC; background-color: #F5F5F5; padding: 10px; }
+div#posted-message p.posted-success { color: #0C0; display: block; width: 90%; margin: 2px auto; text-align: center; border: 1px solid #0C0; background-color: #EFE; padding: 2px; }
+div#posted-message p.posted-headers { padding: 5px; }
+div#posted-message p.posted-message { padding: 5px; }
+div#posted-message p.posted-message textarea { border: 1px solid #000; background-color: #FFF; color: #777; padding: 5px; }
+
+div#testhighlight { visibility: hidden; position: absolute; top: 0px; right: 0px; }
+
+tr.header-row td { font-weight: bold; text-align: center; background-color: #e8eaec; }
+
+.fees { border: 1px solid #000; border-collapse: collapse; }
+.fees td, .fees th { border: 1px solid #000; padding: 2px 4px; text-align: left; }
+.fees td+td { text-align: center; }
+
+
+body.page-schedule table { min-width: 300px; border-collapse: collapse; }
+body.page-schedule table th { border-bottom: 1px solid #000; padding: 2px 4px; background-color: #EEE; }
+/* body.page-schedule table th + th { border-left: 1px solid #000; } */
+
+/* body.page-schedule table td + td { border-left: 1px solid #000; } */
+
+.sm-icons {
+	position: relative; display: inline-block; height: 20px; vertical-align:baseline; line-height: 20px; overflow: hidden;
+}
+å
